@@ -6,7 +6,7 @@ I recently made an overflowing container pannable (vertically) by mouse. Then I 
 There are two ways to pan:
 
 - using the already existing scrollbars
-- absolute positioning the content in the container
+- absolute positioning of the content in its parent
 
 Both has their pros/cons, but absolute positioning is more advanced. I'll start with scrollbars, and later transition to absolute positioning.
 
@@ -14,9 +14,11 @@ Both has their pros/cons, but absolute positioning is more advanced. I'll start 
 
 - [x] Simple pan  
   The content should just track the mouse movement exactly.
-- [ ] Simple inertia effect  
+  - [ ] Allow off-container pan
+- [x] Simple inertia effect  
   The content should keep panning for some time after the mouse is released.
 - [ ] Advanced inertia effect
-  - [ ] Mid-pan direction check
-  - [ ] Improved velocity calculation
+  - [ ] Mid-pan direction check (zig-zags should affect the auto-pan direction)
+  - [ ] Better speed calculation (acceleration ☐, cruising ☐, deceleration ☑)
+  - [ ] Gesture detection (normal vs. quick pan)
 
