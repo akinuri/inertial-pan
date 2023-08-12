@@ -58,7 +58,7 @@
         }
     });
     
-    panTarget.addEventListener("mousemove", (e) => {
+    window.addEventListener("mousemove", (e) => {
         if (pan.active) {
             pan.directionX = e.clientX < pan.startX ? 1 : -1;
             pan.directionY = e.clientY < pan.startY ? 1 : -1;

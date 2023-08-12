@@ -14,7 +14,8 @@ Both has their pros/cons, but absolute positioning is more advanced. I'll start 
 
 - [x] Simple pan  
   The content should just track the mouse movement exactly.
-  - [ ] Allow off-container pan
+  - [x] Allow off-container pan
+  - [ ] Allow off-container inertial pan
 - [x] Simple inertia effect  
   The content should keep panning for some time after the mouse is released.
 - [ ] Advanced inertia effect
